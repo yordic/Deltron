@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3A3E73;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: #FFFFFE;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.2);
+    z-index: 10000;
+
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 55px;
+    font-size: 20px;
+    color: #000;
+
+
+}
+
+header .fa-solid{
+    color: #3A3E73;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+section.productos {
+    padding: 0;
+}
+
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.productos .content{
+    flex: 1 1 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos .content a{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.productos .image{
+    flex: 1 1 10rem;
+    height: 100vh;
+    z-index: 500;
+    min-height: 10rem;
+    background: url(../img/FonLog/Creative\ Block.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.productos .image img{
+    
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: #fef6e4;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 3.5px solid #001858;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    outline: 2px solid #000000;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -50px; top: 0; width: 0;
+    background-color: #54a3b1;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button:hover::before {
+    width: 250%;
+  }
+  
+
+  @media (max-width:991px) {
+    .productos .image{
+       flex:  0 0 0;
+        background: url() no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    
+    
+    }
+
+    header.categoria{
+        justify-content: space-between;
+    }
+
+    .productos{
+        margin-top: 80px;
+    }
+    
+}
+
+
+
+
+
+
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+
+@media (max-width:991px) {
+
+
+
+
+    #menu-bar {
+        display: initial;
+    }
+
+    
+
+    header .nav {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+         clip-path: polygon(0 0, 100% 0,100% 0, 0 0); 
+    }
+
+    header .nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+
+    header .nav a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid #5057b6;
+        background: #fff;
+    }
+
+    #menu-bar{
+        font-size: 30px;
+    }
+   
+
+
+    
+}
+
+
+

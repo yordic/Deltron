@@ -1,0 +1,49 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e9ecef;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section table{
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 16px;
+    transition: 1s all ease;
+    border-collapse: collapse;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+
+}
+
+
+
+section table td{
+    padding: 20px;
+    border: 1px solid #000;
+
+}
+
+.encabezado td{
+    background-color: #457b9d;
+    font-size: 18px;
+    color: #f1faee;
+    font-weight: bold;
+}
+
+
+
+.datosC:hover{
+    background-color: rgb(212, 212, 212);
+    border: 1px solid #000;
+    transform: scale(1.03);
+    transition: 1s;
+}
+
