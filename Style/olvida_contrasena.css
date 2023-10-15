@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  
+}
+body .container img{
+  width: 140px;
+}
+.title {
+  border: 1px solid skyblue;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+form {
+  border: 1px solid yellow;
+  padding: 10px;
+  border: 1px solid rgb(181, 180, 180);
+  width: 80%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4 );
+}
+
+.correo {
+  width: 100%;
+  outline: none;
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 0px;
+  border: 1px solid rgb(181, 180, 180);
+}
+
+.boton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button.a {
+  background-color: #f50000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.a:hover {
+  background-color: #0e5aa7;
+}
+
+button.b {
+  background-color: #e4e6eb;
+  color: #1c1e21;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.b:hover {
+  background-color: #d6d8db;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas de hasta 600px de ancho */
+  form {
+    width: 90%;
+    max-width: 300px;
+  }
+}

@@ -26,26 +26,30 @@ if (!isset($_SESSION['usuario'])) {
 
     <link rel="stylesheet" href="Style/estilos.css">
     <link rel="stylesheet" href="Style/barra.css">
+    <link rel="stylesheet" href="Style/footer.css">
     <title>Document</title>
 </head>
 <body>
 
-    <header class="inicio">
+<header class="inicio">
         <div class="content">
 
-       <nobr> <a href=""><i class="fa-solid fa-shop rojo"></i>COOLBOX</a><a>NET</a>
-       </nobr> </div>
+        
+        <!--color rojo "NET"-->
+            <a href=""><i class="fa-solid fa-shop"></i></a><a class="rojo" href =""> COOLBOX<b class="sega1">NET</b></a></div>
+
+     <!--  <a href=""><i class="fa-solid fa-shop"></i> COOLBOXNET</a> 
+    <a class="rojo" href =""> COOLBOX<b class="sega1">NET</b></a>
+            </div>-->
 
         <div id="menu-bar" class="fas fa-bars" ></div>
-
-
 
         <nav class="nav">
 
             <a href="">Inicio</a>
-            <a href="Categoria/categorias.html">Categorias</a>
+            <a href="Categoria/categoriasSP.html">Categorias</a>
             <a href="">Tiendas</a>
-            <a href="">Nosotros</a>
+            <a href="Categoria/nosotros.html">Nosotros</a>
 
         </nav>
     </header>

@@ -21,7 +21,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #2f3147;
+    background-color: #021137;
 }
 
 
@@ -46,7 +46,7 @@ section {
 .inicio .content .rojo{
     text-align: center;
     font-size: 30px; 
-    color: rgb(243, 0, 0);
+    color: rgb(0, 38, 255);
 
 }
 
@@ -59,7 +59,7 @@ section {
 .home .content h3{
     text-align: center;
     font-size: 40px;
-    color: rgb(243, 0, 0);
+    color: rgb(0, 38, 255);
 
 }
 
@@ -80,7 +80,7 @@ section {
 }
 
 .home .content{
-    color: #fff;
+    color: #ffffffd1;
     flex: 1 1 40rem;
    }
 

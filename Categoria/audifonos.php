@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="../Style/celulares.css">
     <link rel="stylesheet" href="../Style/barraDark.css">
 
-    <title>Document</title>
+    <title>DELTRON</title>
 </head>
 
 <body>
     <header class="inicio">
 
 
-        <a href=""><i class="fa-solid fa-shop"></i> COOLBOXNET</a>
+        <a href=""><i class="fa-solid fa-shop"></i> DELTRON</a>
 
         <div id="menu-bar" class="fas fa-bars" ></div>
 

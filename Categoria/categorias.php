@@ -25,7 +25,7 @@
     <script src="https://kit.fontawesome.com/3922c9a6a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Style/categorias.css">
 
-    <title>Document</title>
+    <title>DELTRON</title>
 </head>
 <body>
 

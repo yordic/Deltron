@@ -54,24 +54,35 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
     //nnumero de tarjeta 
     numeroTarjeta.textContent = valorInput;
 
-    if(valorInput == ''){
-        numeroTarjeta.textContent = '#### #### #### ####';
+//VISA
 
-    }
+if(valorInput[0] == 4){
+    logoMarca.innerHTML = '';
+    const imagen = document.createElement('img');
+    imagen.src = '../img/tarjetas/logos/visa.png';
+    logoMarca.appendChild(imagen);
 
-    if(valorInput[0] == 4){
-		logoMarca.innerHTML = '';
-		const imagen = document.createElement('img');
-		imagen.src = '../img/tarjetas/logos/visa.png';
-		logoMarca.appendChild(imagen);
-	} else if(valorInput[0] == 5){
-		logoMarca.innerHTML = '';
-		const imagen = document.createElement('img');
-		imagen.src = '../img/tarjetas/logos/mastercard.png';
-		logoMarca.appendChild(imagen);
-	
-    }
-    mostrarFrente();
+// MASTERCARD
+} else if(valorInput[0] == 5){
+    logoMarca.innerHTML = '';
+    const imagen = document.createElement('img');
+    imagen.src = '../img/tarjetas/logos/mastercard.png';
+    logoMarca.appendChild(imagen);
+//DINERSCLUB
+}else if(valorInput[0] == 3){
+    logoMarca.innerHTML = '';
+    const imagen = document.createElement('img');
+    imagen.src = '../img/tarjetas/logos/dinersClub.png';
+    logoMarca.appendChild(imagen);
+//AMERICAN
+}else if(valorInput[0] == 6){
+    logoMarca.innerHTML = '';
+    const imagen = document.createElement('img');
+    imagen.src = '../img/tarjetas/logos/americanExpress.png';
+    logoMarca.appendChild(imagen);
+}
+
+mostrarFrente();
 });
 
 // * Input nombre de tarjeta
@@ -115,3 +126,5 @@ formulario.inputCCV.addEventListener('keyup', () => {
 
 	ccv.textContent = formulario.inputCCV.value;
 });
+
+

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../Style/celulares.css">
     <link rel="stylesheet" href="../Style/barraDark.css">
 
-    <title>COOLBOXNET</title>
+    <title>DELTRON</title>
 </head>
 
 <body>

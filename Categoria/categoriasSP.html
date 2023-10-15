@@ -10,52 +10,175 @@
     <script src="https://kit.fontawesome.com/3922c9a6a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Style/categorias.css">
     <link rel="stylesheet" href="../Style/footer.css">
+    <link rel="stylesheet" href="../Style/barra.css">
+    
+    <link rel="stylesheet" href="../Style/estilos.css">
+    
 
-
-    <title>Document</title>
+    <title>DELTRON</title>
 </head>
 <body>
+    <header class="inicio">
+        <div class="content">
 
-    <header class="categoria">
+        
+        <!--color rojo "NET"-->
+            <a href=""></a><a class="rojo" href ="">DELTRON<b class="sega1"></b></a></div>
 
-
-        <a href="../index.html"><i class="fa-solid fa-shop"></i> Tienda</a>
 
         <div id="menu-bar" class="fas fa-bars" ></div>
 
-
-
         <nav class="nav">
 
-            <a href="../index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="">Categorias</a>
-            <a href="../index.php">Iniciar sesion</a>
+            <a href="#">Inicio</a>
+            <a href="Categoria/categoriasSP.html">Categorias</a>
+            <a href="Categoria/nosotros.html">Nosotros</a>
+            
         </nav>
+        <img src="../img/FonLog/cintillo_aviso.jpg" alt="">
         
     </header>
 
 
 
     <section class="productos" id="productos">
+        
 
-        <div class="content">
-            <a href="celulares.php?bloquearBtn=true" class="button">Celulares</a>
-            <a href="audifonos.php?bloquearBtn=true" class="button">Audifonos</a>
-          
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Audifonos</h2>
+                <img class="imagen" src="../img/audifonos/Motorola_79.png" alt="Imagen 1">
+                <p>AUDIFONOS</p>
+                <div  class="Acceso">
+                <button id="btnAudifonos"> Acceder </button>
+                </div>               
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Laptop</h2>
+                <img class="imagen" src="../img/laptop/LaptopGamerAzus.png" alt="Imagen 2">
+                <p>LAPTOPS</p>
+                <div  class="Acceso">
+                <button id="btnLaptops"> Acceder </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Audifonos</h2>
+                <img class="imagen" src="../img/celulares/ZTEA7164GB_599.png" alt="Imagen 3">
+                <p>CELULARES</p>
+                <div  class="Acceso">
+                <button id="btnCelulares"> Acceder </button>
+                </div>
 
-            
+            </div>
+        </div>
+    
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Artículo 4</h2>
+                <img class="imagen" src="../img/celulares/HuaweiNova10SE_1499.png" alt="Imagen 4">
+                <p>Descripción de la tarjeta 4.</p>
+                <div  class="Acceso">
+                    <button> Acceder </button>
+                    </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta 5 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Artículo 5</h2>
+                <img class="imagen" src="../img/celulares/SamsumgGalaxyA04_539.png" alt="Imagen 5">
+                <p>Descripción de la tarjeta 5.</p>
+                <div  class="Acceso">
+                    <button> Acceder </button>
+                    </div>
+ 
+            </div>
+        </div>
+    
+        <!-- Tarjeta 6 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Artículo 6</h2>
+                <img class="imagen" src="../img/celulares/XiamiA2_500.png" alt="Imagen 6">
+                <p>Descripción de la tarjeta 6.</p>
+                <div  class="Acceso">
+                    <button> Acceder </button>
+                    </div>
+ 
+            </div>
+        </div>
+    
+        <!-- Tarjeta 7 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Artículo 7</h2>
+                <img class="imagen" src="../img/audifonos/MARSHALL.png" alt="Imagen 7">
+                <p>Descripción de la tarjeta 7.</p>
+                <div  class="Acceso">
+                    <button> Acceder </button>
+                </div>
+ 
+            </div>
+        </div>
+    
+        <!-- Tarjeta 8 -->
+        <div class="tarjeta">
+            <div class="contenido">
+                <h2>Artículo 8</h2>
+                <img class="imagen" src="../img/audifonos/SKULLCANDY_39.png" alt="Imagen 8">
+                <p>Descripción de la tarjeta 8.</p>
+                <div  class="Acceso">
+                    <button> Acceder </button>
+                    </div>
 
-
+            </div>
         </div>
 
-        <div class="image">
-             <!-- <img src="../img/Creative Block.png" alt=""> -->
-        </div>
+        
+    
         
         
     </section>
-
+    <script>
+        // Obtén el botón por su id
+        var btnAudifonos = document.getElementById("btnAudifonos");
+    
+        // Agrega un evento de clic al botón
+        btnAudifonos.addEventListener("click", function() {
+            // Redirige al usuario a la página de audífonos
+            window.location.href = "../Categoria/audifonos.html#";
+        });
+    
+        // Obtén el botón por su id
+        var btnCelulares = document.getElementById("btnCelulares");
+    
+        // Agrega un evento de clic al botón
+        btnCelulares.addEventListener("click", function() {
+            // Redirige al usuario a la página de celulares
+            window.location.href = "../Categoria/celulares.html";
+        });
+        // Obtén el botón por su id
+        var btnLaptops = document.getElementById("btnLaptops");
+    
+        // Agrega un evento de clic al botón
+        btnLaptops.addEventListener("click", function() {
+            // Redirige al usuario a la página de celulares
+            window.location.href = "../Categoria/laptops.html";
+        });
+    </script>
+    
+ 
     <footer>
 
         <div class="container-footer-all">

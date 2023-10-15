@@ -2,6 +2,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+
+/* Estilo para el contenedor del texto */
+.contenedor {
+    max-width: 900px; /* Ajusta este valor según tu diseño */
+    margin: 100px auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para los párrafos dentro del contenedor */
+#parrafo {
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 20px;
+    margin-bottom: 15px;
+    font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+/* Estilo para el mapa */
+.mapa {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;

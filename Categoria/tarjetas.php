@@ -142,6 +142,7 @@
         const telefono = "<?php echo $telefono ?>"
 
 
+        const numTarjeta = document.querySelector("#inputNumero");
 
 
 
@@ -190,10 +191,29 @@
         const inputDate = document.querySelector('#inputDate');
         const inputCVV = document.querySelector('#inputCVV');
 
+        const nombreTar = document.querySelector('#inputNombre');
+
+        const CVV_Import = document.querySelector('#inputCCV');
+
+
+
+
         function generatePDF(e) {
 
+              console.log(inputCard.value);
+              console.log(nombreTar.value);
+              console.log(CVV_Import.value);
 
+              if(inputCard.value == "" || nombreTar.value == "" || CVV_Import.value == ""){
+                Swal.fire({
+                icon: 'warning',
+                title: 'Completar los datos',
+            })
+              }else{
 
+              
+
+          
 
 
             const fechaActual = new Date();
@@ -290,7 +310,15 @@
 
             doc.save('tabla.pdf');
 
+            setInterval(() => {
+            window.location.href = "../principal.php"
+                
+            }, 1800);
+
+
         }
+
+    }
     </script>
 
 

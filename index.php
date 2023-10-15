@@ -45,6 +45,8 @@
                     <input type="text" placeholder="Correo electronico" name="correo">
                     <input type="password" placeholder="Contraseña" name="contrasena">
                     <button id="btnEntrar">Entrar</button>
+                    <a href="/php/recueperar_contrasena.php">¿Olvidaste tu contraseña?</a>
+
                 </form>
 
                 <!-- Registro -->
